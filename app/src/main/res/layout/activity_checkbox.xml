@@ -7,32 +7,32 @@
     tools:context=".CheckboxActivity">
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/pizza_cb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="8dp"
         android:text="Pizza"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintBottom_toTopOf="@+id/coffee_cb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/coffee_cb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Coffee"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintBottom_toTopOf="@+id/burger_cb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/pizza_cb" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/burger_cb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -40,10 +40,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/coffee_cb" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/order_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="220dp"
