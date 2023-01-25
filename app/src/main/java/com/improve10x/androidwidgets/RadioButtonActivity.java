@@ -10,5 +10,6 @@ public class RadioButtonActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_radio_button);
+        getSupportActionBar().setTitle("Radio Button");
     }
 }
