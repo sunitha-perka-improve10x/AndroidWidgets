@@ -17,7 +17,7 @@ public class ToggleButtonActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taggle_button);
-        getSupportActionBar().setTitle("Taggle button");
+        getSupportActionBar().setTitle("Toggle button");
         setupViews();
         handleAdd();
     }
