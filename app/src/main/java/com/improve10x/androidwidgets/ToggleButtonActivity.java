@@ -11,7 +11,7 @@ import android.widget.ToggleButton;
 public class ToggleButtonActivity extends AppCompatActivity {
     private ToggleButton toggle1Btn;
     private ToggleButton toggle2Btn;
-   private Button submitBtn;
+    private Button submitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
