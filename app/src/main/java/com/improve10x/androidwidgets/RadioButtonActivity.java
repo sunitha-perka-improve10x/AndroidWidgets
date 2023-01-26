@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class RadioButtonActivity extends AppCompatActivity {
     private RadioButton radioButton1;
@@ -19,6 +20,18 @@ public class RadioButtonActivity extends AppCompatActivity {
         setContentView(R.layout.activity_radio_button);
         getSupportActionBar().setTitle("Radio Button");
         SetUpViews();
+        handleBtn();
+    }
+
+    private void handleBtn() {
+        showButton.setOnClickListener(view -> {
+            if(radioButton1.isChecked()) {
+                Toast.makeText(this, "Male", Toast.LENGTH_LONG).show();
+            }
+            if (radioButton2.isChecked()){
+                Toast.makeText(this, "Female", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void SetUpViews() {
