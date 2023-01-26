@@ -7,7 +7,7 @@
     tools:context=".RatingBarActivity">
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/ratingbar_rb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="94dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submit_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="240dp"
@@ -24,5 +24,5 @@
         android:textColor="#221D1D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+        app:layout_constraintTop_toBottomOf="@+id/ratingbar_rb" />
 </androidx.constraintlayout.widget.ConstraintLayout>
