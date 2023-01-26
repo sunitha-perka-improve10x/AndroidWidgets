@@ -8,31 +8,32 @@
     tools:context=".TimePickerActivity">
 
     <TimePicker
-        android:id="@+id/timePicker"
+        android:id="@+id/timePicker_tp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-99dp"
-        tools:layout_editor_absoluteY="25dp" />
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="-16dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/current_time_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="current Time"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toStartOf="@+id/timePicker"
-        tools:layout_editor_absoluteY="421dp" />
+        app:layout_constraintEnd_toEndOf="@+id/timePicker_tp"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="@+id/timePicker_tp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="417dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/changetime_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="132dp"
         android:backgroundTint="#BAA1A1"
         android:text="changetime"
         android:textColor="#1E1C1C"
-        app:layout_constraintBottom_toBottomOf="@+id/timePicker"
+        app:layout_constraintBottom_toBottomOf="@+id/timePicker_tp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
