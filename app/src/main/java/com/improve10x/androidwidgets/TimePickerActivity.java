@@ -14,7 +14,7 @@ public class TimePickerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityTimePickerBinding.inflate(getLayoutInflater());
-        setContentView(R.layout.activity_time_picker);
+        setContentView(binding.getRoot());
         handleTime();
     }
 
