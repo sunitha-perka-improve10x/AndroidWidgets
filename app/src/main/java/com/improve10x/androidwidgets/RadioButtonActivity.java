@@ -7,37 +7,22 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.improve10x.androidwidgets.databinding.ActivityRatingBarBinding;
+
 public class RadioButtonActivity extends AppCompatActivity {
-    private RadioButton radioButton1;
-    private RadioButton radioButton2;
-    private Button showButton;
 
-
+    private ActivityRatingBarBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_radio_button);
+        binding = ActivityRatingBarBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         getSupportActionBar().setTitle("Radio Button");
-        SetUpViews();
-        handleBtn();
+        handleSelectedButton();
     }
 
-    private void handleBtn() {
-        showButton.setOnClickListener(view -> {
-            if(radioButton1.isChecked()) {
-                Toast.makeText(this, "Male", Toast.LENGTH_LONG).show();
-            }
-            if (radioButton2.isChecked()){
-                Toast.makeText(this, "Female", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
+    private void handleSelectedButton() {
 
-    private void SetUpViews() {
-        radioButton1 = findViewById(R.id.radioButton1_btn);
-        radioButton2 = findViewById(R.id.radiobutton2_btn);
-        showButton = findViewById(R.id.showbutton_btn);
     }
-
 }
