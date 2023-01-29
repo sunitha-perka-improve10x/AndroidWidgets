@@ -6,4 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".AlertDialogActivity">
 
+    <Button
+        android:id="@+id/close_app_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="288dp"
+        android:backgroundTint="#BAAAAA"
+        android:text="closeApp"
+        android:textColor="#232121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="showAlertDialog"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
