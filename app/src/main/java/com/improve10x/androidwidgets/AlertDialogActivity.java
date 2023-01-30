@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.improve10x.androidwidgets.databinding.ActivityAlertDialogBinding;
 
 public class AlertDialogActivity extends AppCompatActivity {
+
     private ActivityAlertDialogBinding binding;
 
     @Override
