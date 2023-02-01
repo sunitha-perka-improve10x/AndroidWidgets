@@ -12,8 +12,8 @@ import java.util.ArrayList;
 
 public class CustomListViewActivity extends AppCompatActivity {
     private ActivityCustomListViewBinding binding;
-    private ArrayList<String> imageUrl;
-    private ArrayAdapter<String> arrayAdapter;
+    private ArrayList<CustomList> listLv;
+    private CustomListViewAdapter customListViewAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +21,23 @@ public class CustomListViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(binding.getRoot());
         getSupportActionBar().setTitle("Custom List View");
-        handleCustomList();
+        setData();
+        customListView();
+
     }
 
-    private void handleCustomList() {
+    private void setData() {
+        listLv = new ArrayList<>();
+        CustomList title = new CustomList();
+        title.imageUrl = "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-96.png";
+        title.title = "kjbfk jafn";
+        title.subTitle = "Pavan Kalyan Only Hero";
+        listLv.add(title);
+    }
 
+    private void customListView() {
+        customListViewAdapter = new CustomListViewAdapter(this,R.layout.custom_list_view_item, listLv);
+        binding.customListLv.setAdapter(customListViewAdapter);
 
     }
 }
