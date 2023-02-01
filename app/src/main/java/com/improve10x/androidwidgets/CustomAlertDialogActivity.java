@@ -29,6 +29,14 @@ public class CustomAlertDialogActivity extends AppCompatActivity {
             dialog = new Dialog(this);
             customAlertDialogIemBinding = CustomAlertDialogItemBinding.inflate(getLayoutInflater());
             dialog.setContentView(customAlertDialogIemBinding.getRoot());
+            customAlertDialogIemBinding.dismissBtn.setOnClickListener(view1 -> {
+                finish();
+            });
+            customAlertDialogIemBinding.closeButtonIb.setOnClickListener(view1 -> {
+                dialog.dismiss();
+            });
+            customAlertDialogIemBinding.alertMessageTxt.setText("Alert...!!!");
+            dialog.show();
         });
 
     }
