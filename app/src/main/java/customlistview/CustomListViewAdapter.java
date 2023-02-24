@@ -1,4 +1,4 @@
-package com.improve10x.androidwidgets;
+package customlistview;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,6 +13,8 @@ import com.improve10x.androidwidgets.databinding.CustomListViewItemBinding;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+
+import customlistview.CustomList;
 
 public class CustomListViewAdapter extends ArrayAdapter<CustomList> {
     CustomListViewItemBinding binding;

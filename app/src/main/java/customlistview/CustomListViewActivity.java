@@ -1,11 +1,10 @@
-package com.improve10x.androidwidgets;
+package customlistview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
 
+import com.improve10x.androidwidgets.R;
 import com.improve10x.androidwidgets.databinding.ActivityCustomListViewBinding;
 
 import java.util.ArrayList;
@@ -36,7 +35,7 @@ public class CustomListViewActivity extends AppCompatActivity {
     }
 
     private void customListView() {
-        customListViewAdapter = new CustomListViewAdapter(this,R.layout.custom_list_view_item, listLv);
+        customListViewAdapter = new CustomListViewAdapter(this, R.layout.custom_list_view_item, listLv);
         binding.customListLv.setAdapter(customListViewAdapter);
 
     }

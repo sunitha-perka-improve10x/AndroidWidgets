@@ -1,4 +1,4 @@
-package com.improve10x.androidwidgets;
+package customlistview;
 
 public class CustomList {
     public String imageUrl;
